@@ -1,0 +1,301 @@
+/*--- page ---*/
+
+body {
+	padding: 0;
+	margin: 0;
+	background: rgba(4, 2, 9, 0.4); 
+}
+
+/*--- navigation bar ---*/
+
+.navbar {
+	background: #1f0b69;
+}
+/* .logo1 img{
+	height:10%;
+	width: 20%;
+} */
+
+.nav-link,
+.navbar-brand {
+	color: #fff;
+	cursor: pointer;
+	/* width: 10%; */
+}
+.navbar-brand img{
+	width: 50%;
+}
+.navbar-brand .logo1{
+	width: 10%;
+	height: 5%;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	color: #000;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+/*--- header ---*/
+
+.header {
+	background-image: url('images/space img.jpeg');
+	background-size: 100%;
+	background-position: center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+	width:80%;
+}
+
+.description h1 {
+	color: #6ab446;
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.description button {
+	border: 1px solid #6ab446;
+	background: #6ab446;
+	border-radius: 0;
+	color: #fff;
+}
+
+.description button:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+.container-features{
+	background-color: #1f0b69;
+	display: flex;
+	background-image: url('images/space img3.jpg');
+}
+.col-lg-4 col-md-4 col-sm-6
+
+/*--- feature section ---*/
+.row{
+	display: flex;
+}
+.row{
+	color: #f2f5ed;
+}
+#round1{
+	margin-left:10% ;
+	flex: 1;
+	width: 40%;
+}
+#round2{
+	margin-left: 10%;
+	width: 40%;
+	flex: 1;
+}
+#round2 img{
+	width:100%;
+	height:35%;
+
+}
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+
+.feature-title {
+	color: #e9e0e0;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+
+.features .btn {
+	background-color: #589b37;
+	border: 1px solid #589b37;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.features .btn:hover {
+	background-color: #333;
+	border: 1px solid #333;
+}
+
+/*--- team section ---*/
+
+.background {
+	background-image: url('images/space img3.jpg');
+	/* margin-left: 20%; */
+	color: #e9e0e0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #170834;
+	padding: 4em 0;
+}
+.container-team{
+	/* background-image: url('images/space img3.jpg'); */
+	margin-left: 13%;
+	align-items: center;
+	width: 100%;
+}
+.container-team h1{
+	/* justify-c: center; */
+	margin-left: -30%;
+}
+.container-team img{
+	display: flex;
+	height: 160%;
+	/* margin-left: 40%; */
+}
+
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+
+.team .card {
+	background:none;
+	border: none;
+}
+
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+/*--- footer ---*/
+
+.page-footer {
+	background-image: url('images/space img3.jpg');
+	background-color: #170834;
+	color: #ccc;
+	/* margin-left: 50%; */
+	padding: 60px 0 30px;
+	justify-content: center;
+	/* justify-content: center; */
+	/* width:80% */
+}
+/* .page-footer h1{
+	margin-left: 150%;
+} */
+/* .page-footer p{
+	width:150%;
+	margin-left: 100%;
+} */
+.page-footer img{
+	/* margin-left: 100%; */
+	height: 100%;
+	width: 100%;
+	/* z-index: 10; */
+}
+
+
+
+/*--- modal ---*/
+
+
+
+@media (max-width: 991.98px) {
+
+	.team {
+		padding: 0 15px;
+	}
+	
+}
+
+@media (max-width: 575.98px) {
+
+	.description {
+		left: 0;
+		padding: 0 15px;
+		position: absolute;
+		top: 10%;
+		transform: none;
+		text-align: center;
+	}
+	
+	.description h1 {
+		font-size: 2em;
+	}
+	
+	.description p {
+		font-size: 1.2rem;
+	}
+	
+	.features {
+		margin: 0;
+	}
+	
+	.team {
+		max-width: 60%;
+	}
+	
+	#demo-modal .btn {
+		min-width: auto;
+	}
+
+}
+.img-fluid-1{
+	animation: moving-1 8s ease-in 1  ;
+}
+.img-fluid-2{
+	animation: moving-2 8s ease-in 1  ;
+}
+.description{
+	animation: jump 5s 1s ease-in-out;
+
+}
+
+@keyframes moving-1 {
+    from{transform: translate(-100%);}
+    to{transform: translate(0%);}
+}
+@keyframes moving-2 {
+    from{transform: translate(100%);}
+    to{transform: translate(0%);}
+}
